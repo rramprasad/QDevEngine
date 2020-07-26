@@ -8,5 +8,13 @@
     <fragment
         android:id="@+id/camera_preview_fragment"
         android:name="com.rramprasad.qdevengine.recorder.RecorderFragment"
-        tools:layout="@layout/fragment_recorder" />
+        tools:layout="@layout/fragment_recorder">
+        <action android:id="@+id/action_camera_preview_fragment_to_player_fragment"
+            app:destination="@id/player_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/player_fragment"
+        android:name="com.rramprasad.qdevengine.player.PlayerFragment"
+        tools:layout="@layout/fragment_player" />
 </navigation>
